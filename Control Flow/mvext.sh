@@ -7,6 +7,5 @@ if [[ $# -ne 2 ]]; then
 fi
 
 for f in *"$1";
-  base=$(basename "$f" "$1")
-  echo mv "$f" "${base}$2"
+  mv "$f" "${f/%$1/$2}"
 done
