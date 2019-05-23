@@ -1,0 +1,8 @@
+Error: sdjkvn is not a number
+count [-r] [-b n] [-s n] stop
+
+Print each number up to stop, beginning at 0
+  -b: number to begin with (default: 0)
+  -r reverses the count
+  -s sets step size (default: 1)
+  -h show this help message
