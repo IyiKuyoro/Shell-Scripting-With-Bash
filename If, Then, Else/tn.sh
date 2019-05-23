@@ -19,5 +19,5 @@ if [[ $note ]]; then
   echo "$date: $note" >> "$filename"
   echo "Note '$note' saved to $filename"
 else 
-  echo "Note was not provided."
+  echo "Note was not provided." > /dev/stderr
 fi

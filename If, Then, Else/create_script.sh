@@ -21,7 +21,7 @@ if [[ -e "${filename}" ]]; then
 fi
 
 # Check if command exists
-if type "$scriptname"; then
+if type "$scriptname" > /dev/null 2>&1; then
   echo "Command already exist with the name ${scriptname}"
   exit 1
 fi
